@@ -1,0 +1,67 @@
+---
+title: 脚本维护
+#subtitle: 
+Author       : ling.li liling1@yikongenomics.com
+Date         : 2025-10-22 14:06:42
+LastEditTime : 2025-10-22 14:06:52
+LastEditors  : ling.li
+Description  : 
+References   : 
+Copyright (c) 2025 by ling.li, All Rights Reserved. 
+toc: false #不显示目录
+number-sections: false #不显示标题序号
+shift-heading-level-by: -1
+monofont: "Consolas"
+df-print: paged #数据框打印
+execute: #代码
+        eval: true #运行
+        echo: true #展示代码
+        warning: false #不显示warning
+        cache: true #开启运算结果缓存
+crossref: #交叉引用设置
+    chapters: true
+    fig-title: 图    # (default is "Figure")
+    tbl-title: 表     # (default is "Table")
+    title-delim: "-"  # (default is ":"), not for pdf
+    fig-prefix: 图  # (default is "Figure")
+    tbl-prefix: 表    # (default is "Table")
+format: 
+    pdf:
+        lang: zh-CN
+        pdf-engine: typst
+        mainfont: "SimSun"
+        sansfont: "SimHei"
+        # cite
+        cite-method: biblatex # biblatex,citeproc
+        bibliography: references.bib
+        biblio-title: References
+        # output
+        documentclass: article # scrartcl, article, report or book
+        papersize: a4 # a4, letter
+        colorlinks: true
+        #classoption: [twocolumn,landscape] 
+        keep-tex: false #保存为tex文件
+        fig-pos: 'H'
+        tbl-cap-location: top
+        fig-cap-location: bottom
+        listings: false
+        code-block-bg: '#f6f8fa'
+        highlight-style: github
+        code-block-border-left: false
+        geometry:
+            - top=30mm
+            - left=20mm
+            - heightrounded
+---
+
+## 报告系统
+```{shell}
+深测序的:
+    #/data/biomed/sPGD_Project_Temp/Script_to_be_online/Marsala_T7_Fromout/QC_Results_2_ReportSystem_Version/2025NewVersion
+    /data/biomed/sPGD_Project_Temp/Script_to_be_online/Marsala_T7_Fromout/QC_Results_2_ReportSystem_Version/2025NewVersion_ll
+浅测序的:
+    #/data/biomed/sPGD_Project_Temp/Script_to_be_online/QC_result_ReportJson4NGS_NewCNVpipe_v1.5.3.3.py
+    /data/biomed/sPGD_Project_Temp/Script_to_be_online/QC_result_ReportJson4NGS_NewCNVpipe_v1.5.3.4.py
+配置yaml:
+    /data/biomed/sPGD_Project_Temp/Script_to_be_online/Marsala_T7_Fromout/T7_monitor/bin_dir/Marsala_Run_Scripts/Tool_Template_config_20250530.yaml
+```
